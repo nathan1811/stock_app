@@ -403,13 +403,13 @@ with st.sidebar:
                 if sender == "user":
                     st.markdown(f"""
                     <div class="user-message">
-                        <strong>👤 You:</strong><br>{message[:400]}{'...' if len(message) > 150 else ''}
+                        <strong>👤 You:</strong><br>{message[:600]}{'...' if len(message) > 150 else ''}
                     </div>
                     """, unsafe_allow_html=True)
                 else:
                     st.markdown(f"""
                     <div class="ai-message">
-                        <strong>🤖 Gemini:</strong><br>{message[:1200]}{'...' if len(message) > 200 else ''}
+                        <strong>🤖 Gemini:</strong><br>{message[:2000]}{'...' if len(message) > 200 else ''}
                     </div>
                     """, unsafe_allow_html=True)
     else:
